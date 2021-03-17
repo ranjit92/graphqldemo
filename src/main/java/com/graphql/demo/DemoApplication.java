@@ -7,6 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScans;
 
 @SpringBootApplication
+@ComponentScan(value = {"com.graphql"})
 public class DemoApplication implements CommandLineRunner{
 
 	public static void main(String[] args) {

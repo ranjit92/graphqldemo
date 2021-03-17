@@ -8,6 +8,7 @@ import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 
@@ -84,6 +85,7 @@ public class GraphqlService {
 				.build();
 	}
 	
+	@Bean
 	public GraphQL getGraphql() {
 		return graphql;
 	}
